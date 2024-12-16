@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* align-items: center; */
+}
+
+main {
+    background-color: #c6b3ff;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 800px;
+    height: 600px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.canvas {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas > img {
+    position: absolute; /* 가운데 정렬 */
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.7);
+}
+
+#gallows {
+    top: -5%;
+    left: -20%;
+
+}
+
+#head {
+    top: 12%;
+    left: 35%;
+
+
+}
+
+#body {
+    top: 38%;
+    left: 33%;
+
+}
+
+#leftArm {
+    top: 40%;
+    left: 15%;
+
+}
+
+#rightArm {
+    top: 40%;
+    left: 55%;
+
+}
+
+#leftLeg {
+    top: 58%;
+    left: 55%;
+}
+
+#rightLeg {
+    top: 58%;
+    left: 40%;
+}
+
+.game-area {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.component1 {
+    background-color: #c6b3ff;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.count {
+    font-weight: bold;
+}
+
+.component2 {
+    background-color: #c6b3ff;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.timer {
+    font-weight: bold;
+}
+
+
+// game-area flex 적용 필요! 폰트, 컬러
+// invisible display: none

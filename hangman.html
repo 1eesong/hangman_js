@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hangman-game</title>
+    <link rel="stylesheet" href="hangman.css"/>
+</head>
+<body>
+    <main>
+        <div class="canvas">
+          <img 
+            class="man" 
+            id="gallows" 
+            src="https://elice-contents.github.io/elice-hangman-game/assets/gallows.png" 
+            alt="gallows"
+            />
+          <img 
+            class="man" 
+            id="head" 
+            src="https://elice-contents.github.io/elice-hangman-game/assets/head.png" 
+            alt="head"
+            />
+          <img 
+            class="man" 
+            id="body" 
+            src="https://elice-contents.github.io/elice-hangman-game/assets/body.png" 
+            alt="body"
+            />
+          <img 
+            class="man" 
+            id="leftArm" 
+            src="https://elice-contents.github.io/elice-hangman-game/assets/left-arm.png" 
+            alt="leftArm"
+            />
+          <img 
+            class="man" 
+            id="rightArm" 
+            src="https://elice-contents.github.io/elice-hangman-game/assets/right-arm.png" 
+            alt="rightArm"
+            />
+          <img 
+            class="man" 
+            id="leftLeg" 
+            src="https://elice-contents.github.io/elice-hangman-game/assets/left-leg.png" 
+            alt="leftLeg"
+            />
+          <img 
+            class="man" 
+            id="rightLeg" 
+            src="https://elice-contents.github.io/elice-hangman-game/assets/right-leg.png" 
+            alt="rightLeg"
+            />
+        </div>
+        <div class="game-area">
+            <section class="header">
+                <span class="component1">남은 시도 횟수 : 
+                    <span class="count">7</span>
+                </span>
+                <span class="component2">남은 시간 : 
+                     <span class="timer">60</span>
+                </span>
+            </section>
+            <section class="word">
+                <div class="gameStart">
+                    <span class="gameStart-Title">엘리스 행맨 게임</span>
+                    <button class="gameStart-button">시작하기</button>
+                </div>
+                <div class="gameProblem">
+                    _______
+                </div>
+                <div class="gameCompleted">
+                    <span class="answer">정답 : 
+                         <span class="answerText"></span>
+                    </span>
+                    <span class="gameCompleted-message">성공했습니다!</span>
+                    <button class="restart-button">다시 시작</button>
+                </div class="game">
+                <div class="gameFailed">
+                    <span class="answer">정답 : 
+                        <span class="answerText"></span>
+                    </span>
+                    <span class="gameFailed-message">실패했습니다</span>
+                    <button class="restart-button">다시 시작</button>
+                </div>
+                <div class="gameOver">
+                    <span class="answer">정답 : 
+                        <span class="answerText"></span>
+                    </span>
+                    <span class="gameOver-message">기회를 모두 사용했습니다</span>
+                    <button class="reset-button">처음부터 다시하기</button>
+
+                </div>
+            </section>
+            <section class="keyboard">
+                <button class="button" id="buttonA">A</button>
+                <button class="button" id="buttonB">B</button>
+                <button class="button" id="buttonC">C</button>
+                <button class="button" id="buttonD">D</button>
+                <button class="button" id="buttonE">E</button>
+                <button class="button" id="buttonF">F</button>
+                <button class="button" id="buttonG">G</button>
+                <button class="button" id="buttonH">H</button>
+                <button class="button" id="buttonI">I</button>
+                <button class="button" id="buttonJ">J</button>
+                <button class="button" id="buttonK">K</button>
+                <button class="button" id="buttonL">L</button>
+                <button class="button" id="buttonM">M</button>
+                <button class="button" id="buttonN">N</button>
+                <button class="button" id="buttonO">O</button>
+                <button class="button" id="buttonP">P</button>
+                <button class="button" id="buttonQ">Q</button>
+                <button class="button" id="buttonR">R</button>
+                <button class="button" id="buttonS">S</button>
+                <button class="button" id="buttonT">T</button>
+                <button class="button" id="buttonU">U</button>
+                <button class="button" id="buttonV">V</button>
+                <button class="button" id="buttonW">W</button>
+                <button class="button" id="buttonX">X</button>
+                <button class="button" id="buttonY">Y</button>
+                <button class="button" id="buttonZ">Z</button>
+            </section>
+        </div>
+    </main>
+    <script type="module" src="src/index.js"></script>
+</body>
+</html>
