@@ -89,32 +89,58 @@ main {
     gap: 20px;
 }
 
-.component1 {
+.header_component {
     background-color: #c6b3ff;
     text-align: center;
-    color: black;
+    padding: 5px;
     border-radius: 5px;
     font-size: 20px;
-    padding: 8px;
 }
 
-.count {
-    font-weight: bold;
+.word {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.component2 {
-    background-color: #c6b3ff;
+.word_text {
+    font-size: 30px;
     text-align: center;
-    color: black;
+    padding: 5px;
     border-radius: 5px;
-    font-size: 20px;
-    padding: 8px;
 }
 
-.timer {
+.alphabets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 1px;
+}
+
+.alphabets > button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.word_text > button {
+    font-size: 20px;
+    background-color: #c6b3ff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.invisible {
+    display: none;
+}
+
+.flex-visible {
+    display: flex;
+}
+
+.strong {
     font-weight: bold;
 }
-
-
-// game-area flex 적용 필요! 폰트, 컬러
-// invisible display: none

@@ -4,49 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hangman-game</title>
-    <link rel="stylesheet" href="hangman.css"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <main>
         <div class="canvas">
           <img 
-            class="man" 
+            class="invisible" 
             id="gallows" 
             src="https://elice-contents.github.io/elice-hangman-game/assets/gallows.png" 
             alt="gallows"
             />
           <img 
-            class="man" 
+            class="invisible" 
             id="head" 
             src="https://elice-contents.github.io/elice-hangman-game/assets/head.png" 
             alt="head"
             />
           <img 
-            class="man" 
+            class="invisible" 
             id="body" 
             src="https://elice-contents.github.io/elice-hangman-game/assets/body.png" 
             alt="body"
             />
           <img 
-            class="man" 
+            class="invisible" 
             id="leftArm" 
             src="https://elice-contents.github.io/elice-hangman-game/assets/left-arm.png" 
             alt="leftArm"
             />
           <img 
-            class="man" 
+            class="invisible" 
             id="rightArm" 
             src="https://elice-contents.github.io/elice-hangman-game/assets/right-arm.png" 
             alt="rightArm"
             />
           <img 
-            class="man" 
+            class="invisible" 
             id="leftLeg" 
             src="https://elice-contents.github.io/elice-hangman-game/assets/left-leg.png" 
             alt="leftLeg"
             />
           <img 
-            class="man" 
+            class="invisible" 
             id="rightLeg" 
             src="https://elice-contents.github.io/elice-hangman-game/assets/right-leg.png" 
             alt="rightLeg"
@@ -54,45 +54,36 @@
         </div>
         <div class="game-area">
             <section class="header">
-                <span class="component1">남은 시도 횟수 : 
-                    <span class="count">7</span>
+                <span class="header_component">남은 시도 횟수 : 
+                    <span id="counter" class="strong">7</span>
                 </span>
-                <span class="component2">남은 시간 : 
-                     <span class="timer">60</span>
+                <span class="header_component">남은 시간 : 
+                     <span id="timer" class="strong">60</span>
                 </span>
             </section>
             <section class="word">
-                <div class="gameStart">
-                    <span class="gameStart-Title">엘리스 행맨 게임</span>
-                    <button class="gameStart-button">시작하기</button>
+                <div class="word_problem invisible" id="problemText">
                 </div>
-                <div class="gameProblem">
-                    _______
+                <div class="word_answer invisible" id="answerText">
                 </div>
-                <div class="gameCompleted">
-                    <span class="answer">정답 : 
-                         <span class="answerText"></span>
-                    </span>
-                    <span class="gameCompleted-message">성공했습니다!</span>
-                    <button class="restart-button">다시 시작</button>
-                </div class="game">
-                <div class="gameFailed">
-                    <span class="answer">정답 : 
-                        <span class="answerText"></span>
-                    </span>
-                    <span class="gameFailed-message">실패했습니다</span>
-                    <button class="restart-button">다시 시작</button>
+                <div class="word_text flex-visible" id="startText">
+                    <span class="strong">엘리스 행맨 게임</span>
+                    <button class="strongbutton" id="gameStart-button">시작하기</button>
                 </div>
-                <div class="gameOver">
-                    <span class="answer">정답 : 
-                        <span class="answerText"></span>
-                    </span>
-                    <span class="gameOver-message">기회를 모두 사용했습니다</span>
-                    <button class="reset-button">처음부터 다시하기</button>
-
+                <div class="word_text invisible" id="successText">
+                    <span class="strong">성공했습니다!</span>
+                    <button class="strongbutton" id="restart-button">다시 시작</button>
+                </div>
+                <div class="word_text invisible" id="failText">
+                    <span class="strong">실패했습니다</span>
+                    <button class="strongbutton" id="restart-button">다시 시작</button>
+                </div>
+                <div class="word_text invisible" id="overText">
+                    <span class="strong">기회를 모두 사용했습니다</span>
+                    <button class="strongbutton" id="reset-button">처음부터 다시하기</button>
                 </div>
             </section>
-            <section class="keyboard">
+            <section class="alphabets">
                 <button class="button" id="buttonA">A</button>
                 <button class="button" id="buttonB">B</button>
                 <button class="button" id="buttonC">C</button>
