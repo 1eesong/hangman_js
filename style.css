@@ -109,6 +109,13 @@ main {
     font-size: 30px;
 }
 
+.word_text > button {
+    padding: 5px;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
 .alphabets {
     display: flex;
     flex-wrap: wrap;
