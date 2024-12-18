@@ -8,7 +8,6 @@ body {
 }
 
 main {
-    background-color: #c6b3ff;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -20,9 +19,7 @@ main {
 
 .canvas {
     position: relative;
-    display: block;
-    justify-content: center;
-    align-items: center;
+    background-color: #c6b3ff;
 }
 
 .canvas > img {
@@ -106,10 +103,10 @@ main {
 }
 
 .word_text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
 }
 
 .alphabets {
@@ -133,6 +130,10 @@ main {
     padding: 5px;
 }
 
+.strong {
+    font-weight: bold;
+}
+
 .invisible {
     display: none;
 }
@@ -140,7 +141,30 @@ main {
 .flex-visible {
     display: flex;
 }
+/* ??? 아래 쭉 복습 */
+.button-invisible {
+    opacity: 0;
+}
 
-.strong {
-    font-weight: bold;
+.button-invisible:is(:hover, :focus) {
+    opacity: 0% !important;
+}
+
+.button-invisible:active {
+    opacity: 0% !important;
+}
+
+.button {
+    background-color: #c6b3ff;
+    border: none;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.button:is(:hover, :focus) {
+    opacity: 80%;
+    outline: none;
+}
+
+.button:active {
+    opacity: 60%;
 }
